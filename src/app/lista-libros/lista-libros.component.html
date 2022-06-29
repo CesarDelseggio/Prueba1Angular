@@ -1,6 +1,6 @@
-<div class="row col-12">
-    <h1>Listado de Libros </h1>
-    <div class="col-12">
+<div class="card bg-gray p-3">
+    <h1 class="text-center mt-4">Biblioiteca Polular</h1>
+    <div class="row col-12">
         <span>
             <b>Cantidad de libros es {{myBooks.length}} | </b>
         </span>
@@ -8,9 +8,11 @@
     </div>
 
     <ng-container *ngIf="active">
-        <ng-container *ngFor="let item of myBooks">
-            <app-libro [book]="item"></app-libro>
-        </ng-container>
+      <div class="row col-*">
+        <div class="col" *ngFor="let item of myBooks">
+          <app-libro [book]="item"></app-libro>
+        </div>
+      </div>
     </ng-container>
 </div>
 

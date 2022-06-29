@@ -1,0 +1,10 @@
+<div [ngSwitch]="diaDelaSemana.toLowerCase()">
+  <p *ngSwitchCase="'lunes'">LLegar tarde al trabajo</p>
+  <p *ngSwitchCase="'martes'">Dar de comer al perro</p>
+  <p *ngSwitchCase="'miercoles'">Tomar mucho cafe</p>
+  <p *ngSwitchCase="'jueves'">Ir de joda, fals oviernes</p>
+  <p *ngSwitchCase="'viernes'">Hoy toca banarse</p>
+  <p *ngSwitchDefault>Escriba un dia de la semana para ver el mensaje</p>
+</div>
+
+<input type="text" [(ngModel)]="diaDelaSemana"/>

@@ -5,16 +5,19 @@ import { AppComponent } from './app.component';
 import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
 import { ListaLibrosComponent } from './lista-libros/lista-libros.component';
 import { LibroComponent } from './libro/libro.component';
+import { SwitchComponent } from './switch/switch.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HolaMundoComponent,
     ListaLibrosComponent,
-    LibroComponent
+    LibroComponent,
+    SwitchComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
