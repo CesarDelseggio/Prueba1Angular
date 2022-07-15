@@ -9,12 +9,14 @@ import { Book } from '../models/Book';
 export class LibroComponent implements OnInit {
 
   @Input() book:Book;
+  @Input() indice:number;
 
   constructor() {
     this.book = {
       Id: 1,
       Title: 'Nuevo'
     };
+    this.indice=-1;
    }
 
   ngOnInit(): void {

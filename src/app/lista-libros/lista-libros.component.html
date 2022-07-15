@@ -1,16 +1,16 @@
 <div class="card bg-gray p-3">
-    <h1 class="text-center mt-4">Biblioiteca Polular</h1>
+    <h1 class="text-center mt-4">Lista de Libros</h1>
     <div class="row col-12">
         <span>
             <b>Cantidad de libros es {{myBooks.length}} | </b>
         </span>
-        <button class="btn btn-primary ml-2" (click)="active = !active">Activar/Desactivar</button>
+        <button class="btn btn-primary ml-2" (click)="active = !active">Mostrar/Ocultar</button>
     </div>
 
     <ng-container *ngIf="active">
       <div class="row col-*">
-        <div class="col" *ngFor="let item of myBooks">
-          <app-libro [book]="item"></app-libro>
+        <div class="col" *ngFor="let item of myBooks; index as indice">
+          <app-libro [book]="item" [indice]="indice"></app-libro>
         </div>
       </div>
     </ng-container>

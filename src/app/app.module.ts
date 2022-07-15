@@ -7,6 +7,7 @@ import { ListaLibrosComponent } from './lista-libros/lista-libros.component';
 import { LibroComponent } from './libro/libro.component';
 import { SwitchComponent } from './switch/switch.component';
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     HolaMundoComponent,
     ListaLibrosComponent,
     LibroComponent,
-    SwitchComponent
+    SwitchComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule, FormsModule
